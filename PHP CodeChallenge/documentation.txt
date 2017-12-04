@@ -1,8 +1,14 @@
-Based on the given XML, I have created a XSLT which collects the attriburtes of "degree" elements and display it in the table. 
+run the below code in the MYSQL server to create a xml feed for degree table in degrees database
 
-There are two ways to display the XML feed. 
- 	i) By clicking on the degree.xml file, the file is processed by XSLT ( which has html) and it displays the feed in Table.
 
- 	ii) I have created a HTML5 page index.html with uses XML DOM, it helps to retrive the data from degree.xml and display it in html page.
-
-I have used Sublime Text and Oxygen XML Editor.
+SELECT
+	Degreeid AS [@Degreeid],
+	Letter AS [@Letter],
+	Bp AS [@Bp],
+	Mp AS [@Mp],
+	Dp AS [@Dp],
+	Link AS [@Link],
+	DegreeName AS [@DegreeName],
+	School AS [@School]
+FROM degree
+FOR XML PATH ('degree'), ROOT ('degrees')
