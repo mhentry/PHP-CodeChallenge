@@ -1,0 +1,8 @@
+Based on the given XML, I have created a XSLT which collects the attriburtes of "degree" elements and display it in the table. 
+
+There are two ways to display the XML feed. 
+ 	i) By clicking on the degree.xml file, the file is processed by XSLT ( which has html) and it displays the feed in Table.
+
+ 	ii) I have created a HTML5 page index.html with uses XML DOM, it helps to retrive the data from degree.xml and display it in html page.
+
+I have used Sublime Text and Oxygen XML Editor.
